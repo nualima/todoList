@@ -1,13 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import {AddTask} from './AddTask';
+import {TaskList} from './TaskList';
 
-function App() {
+export function App() {
+    function addPerson(e) {
+        e.preventDefault();
+        console.log('Add person !!', e.target.name.value);
+    }
     return (
-        console.log("addTask"), <
-        addTask / > ,
-        console.log("taskList"), <
-        taskList / >
+    <div className="app">
+        <AddTask /> 
+        
+        <TaskList />
+        </div>
     );
 }
 
 export default App;
+
