@@ -7,7 +7,8 @@ export function App() {
   
     
     return (
-    <div className="app">
+    <div className="app" className="min-h-screen bg-gray-50 py-6 flex flex-col justify-center relative overflow-hidden sm:py-12">
+        oefhaonfeofno
         <AddTask /> 
         
         <TaskList />

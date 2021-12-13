@@ -18,22 +18,33 @@ export function AddTask(props) {
     return (
         <div className="newTask">
 
-            <a variant="outlined" onClick={() =>handleClickOpen()}>+ajouter une nouvelle tâche à votre Todo-List</a>
+            <button variant="outlined" onClick={() =>handleClickOpen()}>+ajouter une nouvelle tâche à votre Todo-List</button>
             <Dialog open={isOpen} onClose={() => handleClose()}>
-                <DialogTitle>Subscribe</DialogTitle>
+                <DialogTitle>~TodoList</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
-                        texte
+                        New Task
                     </DialogContentText>
                     <TextField
                         autoFocus
                         margin="dense"
-                        id="name"
-                        label="Email Address"
-                        type="email"
+                        id="title"
+                        label="Title"
+                        type=""
                         fullWidth
                         variant="standard"
                     />
+                    <TextField
+                        autoFocus
+                        margin="dense"
+                        id="task"
+                        label="Task"
+                        type=""
+                        fullWidth
+                        size= "medium"
+                        variant="standard"
+                    />
+                    
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={()=>handleClose()}>Cancel</Button>
